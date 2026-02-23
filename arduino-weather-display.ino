@@ -186,6 +186,9 @@ void load_arrow(uint8_t arrow_frame[FRAME_HEIGHT][ARROW_WIDTH], float minTemp, f
   // curTemp == maxTemp -> ratio = 1
   float ratio = ((curTemp - minTemp)*100/(maxTemp - minTemp))/100;
   uint8_t arrow_row = (FRAME_HEIGHT-1) * (1-ratio);
+  if (arrow_row > FRAME_HEIGHT-2) {
+    arrow_row = FRAME_HEIGHT-2;
+  }
 
   Serial.print("arrow_row: ");
   Serial.println(arrow_row);
