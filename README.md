@@ -25,11 +25,11 @@ Install these via the Arduino Library Manager:
 
 1. Copy `arduino_secrets.h.example` to `arduino_secrets.h`
 2. Fill in your WiFi credentials and location coordinates
-3. Open `weather2.ino` in the Arduino IDE and upload to your board
+3. Open `arduino-weather-display.ino` in the Arduino IDE and upload to your board
 
 ## Configuration
 
-In `weather2.ino` you can adjust:
+In `arduino-weather-display.ino` you can adjust:
 
 - `REFRESH_SECS` — how often to poll the API (default: 60)
 - `DISPLAY_DEGREE` — show a degree symbol dot (0 or 1)
